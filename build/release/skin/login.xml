@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="308,228" caption="0,0,0,36" >
+	<Font name="微软雅黑" size="14" bold="true" italic="false" />
+    <VerticalLayout inset="4,0,4,4" bkimage="file='winbk.bmp' corner='4,48,4,4' mask='#FFFF00FF'" >
+		<HorizontalLayout height="32" inset="2,2,2,0">
+			<Label text="账户登录" width="80" />		
+			<Control />
+			<Button name="closebtn" width="42" maxheight="18" tooltip="点击这里退出" normalimage="file='frame_btn_close_normal.bmp' mask='#FFFF00FF'" hotimage="file='frame_btn_close_hot.bmp' mask='#FFFF00FF'" pushedimage="file='frame_btn_close_down.bmp' mask='#FFFF00FF'"/>
+		</HorizontalLayout>
+		<Control name="logo" height="80" bkimage="logo.png" bkcolor="#FFFF0000"/>
+        <HorizontalLayout>
+            <Label name="accountLabal" text="账号:" float="true" pos="40, 0, 220, 21" />
+            <Combo name="accountcombo" tooltip="请在这里输入账号..." float="true" pos="100, 1, 220, 21" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="Combo_nor.bmp" dropboxsize="0,150" />
+            <Edit name="accountedit" float="true" pos="101, 2, 199, 20" tooltip="请在这里输入您的账号" bkcolor="#FFFFFFFF" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+        </HorizontalLayout>
+        <HorizontalLayout>
+            <Label name="pwdLabal" text="密码:" float="true" pos="40,0,220,21" />
+            <Edit name="pwdedit" float="true" pos="100,1,220,21" enabled="true" bkcolor="#FFFFFFFF" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" password="true" bordercolor="#FF4EA0D1" bordersize="1"/>
+        </HorizontalLayout>
+        <HorizontalLayout>
+			<VerticalLayout width="20"/>
+            <Button name="loginbtn" text="登录" float="true" pos="120,0,0,0" width="60" height="30" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_nor.bmp" hotimage="button_over.bmp" pushedimage="button_down.bmp" />
+        </HorizontalLayout>
+    </VerticalLayout>
+</Window>

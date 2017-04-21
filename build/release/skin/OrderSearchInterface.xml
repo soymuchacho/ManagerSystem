@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="257,600">
+	<VerticalLayout bordersize="1" bordercolor="#FF0934DA"  scrollbar="true">
+		<HorizontalLayout height="30" >
+			<Label text="当前位置：<a>首页</a> >> <a>订单管理</a> >> <a>销售订单</a>" font="3" textcolor="#FFFFFFFF" bkcolor="#FFC8C6CB" padding="1,0,0,0" showhtml="true"/>
+		</HorizontalLayout>	
+		<HorizontalLayout bkcolor="#FFC8C6CB" height="40" padding="1,0,2,0">
+			<Control height="30" bkcolor="#FFC8C6CB" />
+			<Combo height="19" width="142" name="ordersearch_mode" padding="1,8,1,1" align="center" normalimage="file='Combo_nor.bmp'" pushedimage="file='Combo_over.bmp'">
+				<ListLabelElement text="按订单日期查询" selected="true" align="center" />
+				<ListLabelElement text="按订单编号查询" align="center"/>
+			</Combo>
+			<Label text="订单日期:" width="80" height="30" font="3" padding="10,5,0,0" bkcolor="#FFC8C6CB"/>
+			<DateTime name="OrderDateTimeBegin" width="100" height="30" align="center" bkcolor="#FFE2E5EA" padding="5,5,0,0" textpadding="2,0,0,0" bordersize="1" bordercolor="#00000000"/>
+			<Label text="—— " font="3" width="30" height="30" padding="15,5,0,0"/>
+			<DateTime name="OrderDateTimeEnd" width="100" height="30" align="center" bkcolor="#FFE2E5EA" padding="15,5,0,0" textpadding="2,0,0,0" bordersize="1" bordercolor="#00000000"/>
+			<Edit name="edt_order_name" text="输入订单的编号..." width="258" height="30" font="3" padding="10,5,0,0" autoselall ="true" bordersize="1" bordercolor="#FF164976" bkimage="file='Search.bmp' corner='3,1,3,1'" />
+			<Button name="btnOrderSearch" bkimage="quicksearch.png" width="25" height="25" padding="10,8,0,0"/>
+			<Control height="30" />
+		</HorizontalLayout>
+		<HorizontalLayout height="30" >
+			<Label text="销售订单" font="8" bkcolor="#FFFFFFFF" padding="1,0,0,0" align="center"/>
+		</HorizontalLayout>	
+		<HorizontalLayout padding="1,5,2,2" >
+			<List name="orderlist" bordersize="2" bkcolor="#FFFFFFFF" inset="0,0,0,0" itemshowhtml="true" vscrollbar="true" hscrollbar="true" headerbkimage="file='list_header_bg.png'" itemalign="center" itembkcolor="#FFE2DDDF" itemaltbk="true" vscrollbar="true" hscrollbar="true" menu="true">
+				<ListHeader height="30" menu="true">
+					<ListHeaderItem text="订单号" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="订单名称" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="订单类型" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="客户" font="0" minwidth="50" width="50" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="客户代码" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="订单" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="试用" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="外购" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="生产地" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="备注" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="发货地" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="物料编码" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="刀具名称" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="刀具规格" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="类别" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="订单数量" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="未交数量" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="下单日期" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="交货日期" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="产品加工跟踪卡号" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="一次发货数量" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="一次发货日期" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="一次顺丰单号" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="二次发货数量" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="二次发货日期" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="二次顺丰单号" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="三次发货数量" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="三次发货日期" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="三次顺丰单号" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="四次发货数量" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="四次发货日期" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="四次顺丰单号" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+					<ListHeaderItem text="操作" font="0" minwidth="100" width="100" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'" sepwidth="2"/>
+				</ListHeader>
+			</List>
+		</HorizontalLayout>		
+	</VerticalLayout>
+</Window>

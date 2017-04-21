@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<ListContainerElement height="30" bordersize="1" bordercolor="#030303">
+			<HorizontalLayout minwidth="100" width="100" height="30" bordersize="1" >
+				<Edit name="employee_number" readonly="true" padding="5,5,5,5" text="" align="center"/> 
+			</HorizontalLayout>
+			<HorizontalLayout minwidth="100" width="100" height="30" bordersize="1">
+				<Edit name="employee_name" text="" padding="5,5,5,5" align="center" />
+			</HorizontalLayout>
+			<HorizontalLayout minwidth="50" width="50" height="30" bordersize="1">
+				<Combo name="employee_sex" minwidth="50" width="50" padding="1,1,1,1" align="center" >
+					<ListLabelElement text="男" selected="true" />
+					<ListLabelElement text="女" />
+				</Combo>
+			</HorizontalLayout>
+			<HorizontalLayout minwidth="50" width="50" height="30" bordersize="1">
+				<Edit name="employee_age" text="30" width="50" padding="5,5,5,5" align="center" />
+			</HorizontalLayout>
+			<HorizontalLayout minwidth="100" width="100" height="30" bordersize="1">
+				<Datetime name="employee_date"  height="30"  padding="1,1,1,1" textpadding="2,0,0,0" align="center" />
+			</HorizontalLayout>		
+			<HorizontalLayout minwidth="100" width="100" height="30" bordersize="1">
+				<Combo name="employee_position" minwidth="100" width="100" padding="1,1,1,1" align="center" >
+					<ListLabelElement text="经理" selected="true" />
+					<ListLabelElement text="班长" />
+					<ListLabelElement text="员工" />
+				</Combo>
+			</HorizontalLayout>			
+			<HorizontalLayout minwidth="100" width="100" height="30" bordersize="1">
+				<Combo name="employee_permissions" padding="1,1,1,1" align="center" >
+					<ListLabelElement text="一级" selected="true" />
+					<ListLabelElement text="二级" />
+					<ListLabelElement text="三级" />
+				</Combo>
+			</HorizontalLayout>
+			<HorizontalLayout minwidth="100" width="100" height="30" bordersize="1">
+				<Control />
+				<Button text="<a>保存</a>" font="3" showhtml="true" padding="2,0,0,0"/>
+				<Button text="<a>删除</a>" font="3" showhtml="true" padding="2,0,0,0"/>
+				<Control />
+			</HorizontalLayout>
+	</ListContainerElement>
+</Window>

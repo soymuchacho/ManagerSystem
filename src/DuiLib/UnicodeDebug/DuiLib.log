@@ -1,0 +1,10 @@
+﻿生成启动时间为 2017/4/17 13:21:23。
+     1>项目“D:\MyProgram\ManagerSystem\DuiLib\DuiLib.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1197,5): warning MSB8030: The linker switch "Minimum Required Version" requires "SubSystem" to be set.  Without "SubSystem", the "Minimum Required Version" would not be passed to linker and could prevent to the output binary from running on older Operating Systems.
+     1>Link:
+         DuiLib.vcxproj -> D:\MyProgram\ManagerSystem\DuiLib\..\bin\DuiLib_ud.dll
+     1>已完成生成项目“D:\MyProgram\ManagerSystem\DuiLib\DuiLib.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.06

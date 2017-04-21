@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="968,600" sizebox="4,4,4,4" caption="0,0,0,40" mininfo="600,400">
+    <Font id="0" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="14" bold="true" italic="false" />
+    <Font id="2" name="微软雅黑" size="10" bold="false" />
+    <Font id="3" name="微软雅黑" size="12" bold="false" />
+    <Font id="4" name="微软雅黑" size="13" bold="false" />
+	<Font id="5" name="微软雅黑" size="14" bold="true" shared="true" />
+	<Font id="6" name="微软雅黑" size="12" bold="true" shared="true" />
+	<Font id="7" name="微软雅黑" size="14" bold="true" shared="true" underline="true"/>
+	<Font id="8" name="宋体" size="22" bold="true" shared="true"/>
+	<Include source="scrollbar.xml" />
+    <VerticalLayout bkcolor="#FFFFFFFF" bordersize="2" bordercolor="#FF0934DA">
+        <HorizontalLayout name="ctnCaption" height="40" bkcolor="#FF4775CC" >
+			<VerticalLayout>
+				<HorizontalLayout>				
+					<Control bkimage="logo.png" padding="0,2,0,0" height="35" width="100"/>
+					<Label text= "企业信息管理系统" textcolor="#FFFFFFFF" padding="10,0,0,0" font="5" height="40" />
+				</HorizontalLayout>
+			</VerticalLayout>
+			<VerticalLayout />
+			<HorizontalLayout width="280">
+					<Control bkimage="user.jpg" width="20" height="20" padding="0,10,0,0" align="vcenter" />				
+					<Button  name="BtnUserinfo" text="soymuchacho" padding="5,0,0,0" textcolor="#0000FF" font="7" width="80" height="40" endellipsis="true" />
+					<Label  text="，欢迎您！" padding="0,0,0,0" textcolor="#FFFFFFFF" font="0" height="40" endellipsis="true" />
+				<VerticalLayout width="95" height="40">									
+					<Button name="minbtn" tooltip="最小化" float="true" pos="0,3,0,0" width="27" height="31" bkimage="file=&apos;btn_minmax.png&apos; source=&apos;45,0,60,15&apos; dest=&apos;6,8,21,23&apos; " textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" hotimage="file=&apos;btn_style_minmax.png&apos; source=&apos;27,0,54,30&apos;" pushedimage="file=&apos;btn_style_minmax.png&apos; source=&apos;54,0,81,30&apos;" />
+					<Button name="maxbtn" tooltip="最大化" float="true" pos="28,3,0,0" width="27" height="31" bkimage="file=&apos;btn_minmax.png&apos; source=&apos;60,0,75,15&apos; dest=&apos;6,8,21,23&apos; " textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" hotimage="file=&apos;btn_style_minmax.png&apos; source=&apos;27,0,54,30&apos;" pushedimage="file=&apos;btn_style_minmax.png&apos; source=&apos;54,0,81,30&apos;" />
+					<Button name="restorebtn" tooltip="还原" visible="false" float="true" pos="28,3,0,0" width="27" height="31" bkimage="file=&apos;btn_minmax.png&apos; source=&apos;75,0,90,15&apos; dest=&apos;6,8,21,23&apos; " textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" hotimage="file=&apos;btn_style_minmax.png&apos; source=&apos;27,0,54,30&apos;" pushedimage="file=&apos;btn_style_minmax.png&apos; source=&apos;54,0,81,30&apos;" />
+					<Button name="closebtn" tooltip="关闭" float="true" pos="56,3,0,0" width="36" height="31" bkimage="file=&apos;btn_minmax.png&apos; source=&apos;90,0,105,15&apos; dest=&apos;11,8,26,23&apos; " textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" hotimage="file=&apos;btn_style_close.png&apos; source=&apos;36,0,72,30&apos;" pushedimage="file=&apos;btn_style_close.png&apos; source=&apos;72,0,108,30&apos;" />
+				</VerticalLayout>
+			</HorizontalLayout>							
+		</HorizontalLayout>
+		<HorizontalLayout bordersize="2" bordercolor="#FF0934DA">
+            <MenuList width="225"/>
+			<TabLayout name="tabMenulist">
+				<HorizontalLayout name="mainInterface">
+					<Text text="欢迎使用企业信息管理系统" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" align="center"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="EmployeeSearchInterface">
+					<EmployeeSearchInterface />					
+				</HorizontalLayout>
+				<HorizontalLayout  name="EmployeeHiredInterface">
+					<Text text="员工入职正在开发中" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" align="center"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="EmployeeTurnoverInterface">
+					<Text text="员工离职正在开发中" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" align="center"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="CustomerSearchInterface">
+					<Text text="客户查询正在开发中" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" align="center"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="CustomerAddInterface">
+					<Text text="客户新增正在开发中" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" align="center"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="OrderSearchInterface">
+					<OrderSearchInterface />
+				</HorizontalLayout>
+				<HorizontalLayout name="OrderEntryInterface">
+					<Text text="订单录入正在开发中" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" align="center"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="FinanceSearchInterface">
+					<Text text="财务查询正在开发中" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" align="center"/>
+				</HorizontalLayout>
+				<HorizontalLayout name="FinanceReportInterface">
+					<Text text="财务报表正在开发中" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" align="center"/>
+				</HorizontalLayout>
+			</TabLayout>
+		</HorizontalLayout>     
+    </VerticalLayout>
+</Window>

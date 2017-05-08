@@ -90,7 +90,7 @@ void CManagerFrameWnd::Notify(TNotifyUI & msg)
 		}
 		else if (name == _T("EmployeeHired"))
 		{
-			// 员工入职
+			// 员工入职新增
 			CControlUI * pInterface = static_cast<CHorizontalLayoutUI*>(m_PaintManager.FindControl(_T("EmployeeHiredInterface")));
 			pControl->SelectItem(pInterface);
 		}

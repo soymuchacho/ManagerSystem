@@ -34,9 +34,6 @@
 		<HorizontalLayout bordersize="2" bordercolor="#00000000">
             <MenuList width="52"/>
 			<TabLayout name="tabMenulist">
-				<HorizontalLayout name="mainInterface">
-					<Text text="欢迎使用企业信息管理系统" pos="335, 180, 600, 300" relativepos="50,50,0,0"  float="true" font="4" align="center"/>
-				</HorizontalLayout>
 				<HorizontalLayout name="EmployeeSearchInterface">
 					<EmployeeSearchInterface />					
 				</HorizontalLayout>

@@ -54,11 +54,35 @@ CControlUI* CManagerFrameWnd::CreateControl(LPCTSTR pstrClassName)
 
 void CManagerFrameWnd::Notify(TNotifyUI & msg)
 {
-	if (msg.sType == DUI_MSGTYPE_ITEMCLICK)
+	if (msg.sType == DUI_MSGTYPE_CLICK)
 	{
 		CDuiString name = msg.pSender->GetName();
 		CTabLayoutUI* pControl = static_cast<CTabLayoutUI*>(m_PaintManager.FindControl(_T("tabMenulist")));
-		if (name == _T("EmployeeSearch"))
+		if (name == _T("Employee"))
+		{
+			// 人力资源
+			CControlUI * pInterface = static_cast<CHorizontalLayoutUI*>(m_PaintManager.FindControl(_T("EmployeeSearchInterface")));
+			pControl->SelectItem(pInterface);
+		}
+		else if (name == _T("Customer"))
+		{
+			// 客户管理
+			CControlUI * pInterface = static_cast<CHorizontalLayoutUI*>(m_PaintManager.FindControl(_T("CustomerSearchInterface")));
+			pControl->SelectItem(pInterface);
+		}
+		else if (name == _T("Order"))
+		{
+			// 订单管理
+			CControlUI * pInterface = static_cast<CHorizontalLayoutUI*>(m_PaintManager.FindControl(_T("OrderSearchInterface")));
+			pControl->SelectItem(pInterface);
+		}
+		else if (name == _T("Finance"))
+		{
+			// 财务管理
+			CControlUI * pInterface = static_cast<CHorizontalLayoutUI*>(m_PaintManager.FindControl(_T("FinanceSearchInterface")));
+			pControl->SelectItem(pInterface);
+		}
+		else if (name == _T("EmployeeSearch"))
 		{
 			// 员工查询
 			CControlUI * pInterface = static_cast<CHorizontalLayoutUI*>(m_PaintManager.FindControl(_T("EmployeeSearchInterface")));
@@ -112,11 +136,7 @@ void CManagerFrameWnd::Notify(TNotifyUI & msg)
 			CControlUI * pInterface = static_cast<CHorizontalLayoutUI*>(m_PaintManager.FindControl(_T("FinanceReportInterface")));
 			pControl->SelectItem(pInterface);
 		}
-	}
-	if (msg.sType == DUI_MSGTYPE_CLICK)
-	{
-		CDuiString name = msg.pSender->GetName();
-		if (name == _T("btnEmployeeSearch"))
+		else if (name == _T("btnEmployeeSearch"))
 		{
 			// 员工搜索
 			OnSearchEmployee();

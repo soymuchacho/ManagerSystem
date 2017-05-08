@@ -1,33 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Window size="225,600">
-    <VerticalLayout name="ctnMenulist" bkcolor="#FF4775CC" padding="0,1,0,0">
-		<TreeView name="treeMenulist" multipleitem="true" bordersize="1" bordercolor="#FF2B2B2B" itemtextcolor="#FFFFFFFF" itemhottextcolor="#FFC8C6CB" selitemtextcolor="#FFC8C6CB" itemhotbkcolor="#FF1B1B1B" itemselectedbkcolor="#FF151C2C" vscrollbar="true" hscrollbar="false" padding="1,1,1,1" >
-			<TreeNode name="Employee" text="人力资源" height="33" bkimage="tree_top.png" itemattr="valign=&quot;vcenter&quot; font=&quot;5&quot; textpadding=&quot;12,0,0,0&quot;" folderattr="padding=&quot;0,10,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; selectedimage=&quot;file='treeview_expand.png' source='0,0,16,16' &quot; normalimage=&quot;file='treeview_expand.png' source='16,0,32,16' &quot;">
-				<TreeNode name="EmployeeSearch" text="员工查询" inset="-8,0,0,0" height="22" bkcolor="#FF4775CC" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;"   folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot;">					    			
+    <VerticalLayout name="ctnMenulist" bkcolor="#FF354050" padding="0,0,0,0">
+		<Control width="52" height="52" bkimage="file='division.png'"/>
+		<Option name="Employee" tooltip="人力资源" height="18" width="28" padding="17,12,17,14" normalimage="file='mail_normal.png' " hotimage="file='mail_hover.png' " pushedimage="file='mail_down.png'" selectedimage="file='mail_down.png'" group="FeatureBarTab" selected="true"/>
+		<Option name="Customer" tooltip="客户管理" height="18" width="28" padding="17,12,17,14" normalimage="file='mail_normal.png' " hotimage="file='mail_hover.png' " pushedimage="file='mail_down.png'" selectedimage="file='mail_down.png'" group="FeatureBarTab" />
+		<Option name="Order" tooltip="订单管理" height="18" width="28" padding="17,12,17,14" normalimage="file='mail_normal.png' " hotimage="file='mail_hover.png' " pushedimage="file='mail_down.png'" selectedimage="file='mail_down.png'" group="FeatureBarTab" />
+		<Option name="Finance" tooltip="财务管理" height="18" width="28" padding="17,12,17,14" normalimage="file='mail_normal.png' " hotimage="file='mail_hover.png' " pushedimage="file='mail_down.png'" selectedimage="file='mail_down.png'" group="FeatureBarTab" />
+		<Control width="52" height="52" bkimage="file='division.png'"/>
+	</VerticalLayout>
+</Window>
+
+<!--
+<TreeView name="treeMenulist" multipleitem="true" bordersize="1" bordercolor="#FF2B2B2B" itemtextcolor="#FFFFFFFF" itemhottextcolor="#FFFFFFFF" selitemtextcolor="#FFFFFFFF" itemhotbkcolor="#FF5E6C86" itemselectedbkcolor="#FF5E6C86" vscrollbar="true" hscrollbar="false" padding="1,1,1,1" >
+			<TreeNode name="Employee" text="人力资源" height="33" bkcolor="#FF354050"  itemattr="valign=&quot;vcenter&quot; font=&quot;5&quot; textpadding=&quot;12,0,0,0&quot;" folderattr="padding=&quot;0,10,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; selectedimage=&quot;file='treeview_expand.png' source='0,0,16,16' &quot; normalimage=&quot;file='treeview_expand.png' source='16,0,32,16' &quot;">	
+				<TreeNode name="EmployeeSearch" text="员工查询"  textcolor="#FFFFFFFF" height="22" bkcolor="#FF354050" group="FeatureBarTab" selected="true"/>
+				<TreeNode name="EmployeeHired" text="入职办理" textcolor="#FFFFFFFF" height="22" bkcolor="#FF354050" group="FeatureBarTab"/>					    			
+				<TreeNode name="EmployeeTurnover" text="离职办理" textcolor="#FFFFFFFF"  height="22" bkcolor="#FF354050" group="FeatureBarTab"/>					    			
+			</TreeNode>				
+			<TreeNode name="Customer" text="客户管理" height="33" bkcolor="#FF354050" itemattr="valign=&quot;vcenter&quot; font=&quot;5&quot; textpadding=&quot;12,0,0,0&quot;" folderattr="padding=&quot;0,10,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; selectedimage=&quot;file='treeview_expand.png' source='0,0,16,16' &quot; normalimage=&quot;file='treeview_expand.png' source='16,0,32,16' &quot;">
+			    <TreeNode name="CustomerSearch" text="客户查询" inset="-8,0,0,0" height="22" bkcolor="#FF354050" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">					    			
 				</TreeNode>
-				<TreeNode name="EmployeeHired" text="入职办理" inset="-8,0,0,0" height="22" bkcolor="#FF4775CC" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot;">					    			
-				</TreeNode>
-				<TreeNode name="EmployeeTurnover" text="离职办理" inset="-8,0,0,0" height="22" bkcolor="#FF4775CC" align=""itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot;">					    			
+			    <TreeNode name="CustomerAdd" text="客户新增" inset="-8,0,0,0" height="22" bkcolor="#FF354050" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">				    			
 				</TreeNode>
 			</TreeNode>
-			<TreeNode name="Customer" text="客户管理" height="33" bkimage="tree_top.png" itemattr="valign=&quot;vcenter&quot; font=&quot;5&quot; textpadding=&quot;12,0,0,0&quot;" folderattr="padding=&quot;0,10,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; selectedimage=&quot;file='treeview_expand.png' source='0,0,16,16' &quot; normalimage=&quot;file='treeview_expand.png' source='16,0,32,16' &quot;">
-			    <TreeNode name="CustomerSearch" text="客户查询" inset="-8,0,0,0" height="22" bkcolor="#FF4775CC" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">					    			
+			<TreeNode name="Order" text="订单管理" height="33" bkcolor="#FF354050" itemattr="valign=&quot;vcenter&quot; font=&quot;5&quot; textpadding=&quot;12,0,0,0&quot;" folderattr="padding=&quot;0,10,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; selectedimage=&quot;file='treeview_expand.png' source='0,0,16,16' &quot; normalimage=&quot;file='treeview_expand.png' source='16,0,32,16' &quot;">
+			    <TreeNode name="OrderSearch" text="销售订单"  inset="-8,0,0,0" height="22" bkcolor="#FF354050" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">					    			
 				</TreeNode>
-			    <TreeNode name="CustomerAdd" text="客户新增" inset="-8,0,0,0" height="22" bkcolor="#FF4775CC" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">				    			
-				</TreeNode>
-			</TreeNode>
-			<TreeNode name="Order" text="订单管理" height="33" bkimage="tree_top.png" itemattr="valign=&quot;vcenter&quot; font=&quot;5&quot; textpadding=&quot;12,0,0,0&quot;" folderattr="padding=&quot;0,10,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; selectedimage=&quot;file='treeview_expand.png' source='0,0,16,16' &quot; normalimage=&quot;file='treeview_expand.png' source='16,0,32,16' &quot;">
-			    <TreeNode name="OrderSearch" text="销售订单"  inset="-8,0,0,0" height="22" bkcolor="#FF4775CC" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">					    			
-				</TreeNode>
-			    <TreeNode name="OrderRepair" text="返修订单" inset="-8,0,0,0" height="22" bkcolor="#FF4775CC" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">				    			
+			    <TreeNode name="OrderRepair" text="返修订单" inset="-8,0,0,0" height="22" bkcolor="#FF354050" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">				    			
 				</TreeNode>
 			</TreeNode>
-			<TreeNode name="Finance" text="财务管理" height="33" bkimage="tree_top.png" itemattr="valign=&quot;vcenter&quot; font=&quot;5&quot; textpadding=&quot;12,0,0,0&quot;" folderattr="padding=&quot;0,10,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; selectedimage=&quot;file='treeview_expand.png' source='0,0,16,16' &quot; normalimage=&quot;file='treeview_expand.png' source='16,0,32,16' &quot;">
-			    <TreeNode name="FinanceSearch" text="财务查询" inset="-8,0,0,0" height="22" bkcolor="#FF4775CC" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">					    			
+			<TreeNode name="Finance" text="财务管理" height="33" bkcolor="#FF354050" itemattr="valign=&quot;vcenter&quot; font=&quot;5&quot; textpadding=&quot;12,0,0,0&quot;" folderattr="padding=&quot;0,10,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; selectedimage=&quot;file='treeview_expand.png' source='0,0,16,16' &quot; normalimage=&quot;file='treeview_expand.png' source='16,0,32,16' &quot;">
+			    <TreeNode name="FinanceSearch" text="财务查询" inset="-8,0,0,0" height="22" bkcolor="#FF354050" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">					    			
 				</TreeNode>
-			    <TreeNode name="FinanceReport" text="财务报表" inset="-8,0,0,0" height="22" bkcolor="#FF4775CC" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">				    			
+			    <TreeNode name="FinanceReport" text="财务报表" inset="-8,0,0,0" height="22" bkcolor="#FF354050" itemattr="valign=&quot;vcenter&quot; font=&quot;6&quot; textpadding=&quot;16,0,0,0&quot;" folderattr="padding=&quot;0,5,0,0&quot; width=&quot;12&quot; height=&quot;12&quot;">				    			
 				</TreeNode>
 			</TreeNode>
 		</TreeView>
-	</VerticalLayout>
-</Window>
+		--!>

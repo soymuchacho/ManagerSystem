@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <Window size="308,228" caption="0,0,0,36" >
-	<Font name="微软雅黑" size="14" bold="true" italic="false" />
-    <VerticalLayout inset="4,0,4,4" bkimage="file='winbk.bmp' corner='4,48,4,4' mask='#FFFF00FF'" >
-		<HorizontalLayout height="32" inset="2,2,2,0">
-			<Label text="账户登录" width="80" />		
-			<Control />
-			<Button name="closebtn" width="42" maxheight="18" tooltip="点击这里退出" normalimage="file='frame_btn_close_normal.bmp' mask='#FFFF00FF'" hotimage="file='frame_btn_close_hot.bmp' mask='#FFFF00FF'" pushedimage="file='frame_btn_close_down.bmp' mask='#FFFF00FF'"/>
+	<Font id="1" name="微软雅黑" size="14" bold="true" italic="false" />
+	<Font id="2" name="微软雅黑" size="14" bold="true" italic="false" />
+    <VerticalLayout bkcolor="#FFFFFFFF" >
+		<HorizontalLayout height="36" bkcolor="#FF2C333F">				
+				<Label text="账户登录" font="2" padding="10,0,0,0" width="80" textcolor="#FFFFFFFF"/>		
+				<Control />
+				<Button name="closebtn" width="16" maxheight="16" padding="10,10,10,10" tooltip="点击这里退出" normalimage="file='close_normal.png'" hotimage="file='close_hover.png'" pushedimage="file='close_down.png'"/>			
 		</HorizontalLayout>
 		<Control name="logo" height="80" bkimage="logo.png" bkcolor="#FFFF0000"/>
         <HorizontalLayout>
